@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="vamk.e1700814.payapplication.controller.fragments.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sendFragmentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:backgroundTint="?colorPrimaryDark"
+            app:layout_constraintBottom_toTopOf="@+id/radioButtonGroup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/headerTextView">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/numpadOutputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/displayedWholeNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="64sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/displayedPoint"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/displayedPoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/white"
+                    android:textSize="64sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/displayedDecimal"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/displayedDecimal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/white"
+                    android:textSize="64sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/blinkingLine"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/blinkingLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="|"
+                    android:textColor="@color/white"
+                    android:textSize="48sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/displayedCurrency"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/displayedCurrency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/localCurrency"
+                    android:textColor="@color/white"
+                    android:textSize="64sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/numpadLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewBackSpace">
+
+            <Button
+                android:id="@+id/numpadOne"
+                android:layout_width="124dp"
+                android:layout_height="84dp"
+                android:text="@string/numpadOne"
+                android:textSize="32sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/numpadTwo"
+                android:layout_width="124dp"
+                android:layout_height="84dp"
+                android:text="@string/numpadTwo"
+                android:textSize="32sp"
+                app:layout_constraintBottom_toBottomOf="@+id/numpadOne"
+                app:layout_constraintEnd_toStartOf="@+id/numpadThree"
+                app:layout_constraintStart_toEndOf="@+id/numpadOne" />
+
+            <Button
+                android:id="@+id/numpadThree"
+                android:layout_width="124dp"
+                android:layout_height="84dp"
+                android:text="@string/numpadThree"
+                android:textSize="32sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/numpadOne" />
+
+            <Button
+                android:id="@+id/numpadFour"
+                android:layout_width="124dp"
+                android:layout_height="84dp"
+                android:text="@string/numpadFour"
+                android:textSize="32sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/numpadOne" />
+
+            <Button
+                android:id="@+id/numpadFive"
+                android:layout_width="124dp"
+                android:layout_height="84dp"
+                android:text="@string/numpadFive"
+                android:textSize="32sp"
+                app:layout_constraintBottom_toBottomOf="@+id/numpadFour"
+                app:layout_constraintEnd_toStartOf="@+id/numpadSix"
+                app:layout_constraintStart_toEndOf="@+id/numpadFour" />
+
+            <Button
+                android:id="@+id/numpadSix"
+                android:layout_width="124dp"
+                android:layout_height="84dp"
+                android:text="@string/numpadSix"
+                android:textSize="32sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/numpadFour" />
+
+            <Button
+                android:id="@+id/numpadSeven"
+                android:layout_width="124dp"
+                android:layout_height="84dp"
+                android:text="@string/numpadSeven"
+                android:textSize="32sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/numpadFour" />
+
+            <Button
+                android:id="@+id/numpadEight"
+                android:layout_width="124dp"
+                android:layout_height="84dp"
+                android:text="@string/numpadEight"
+                android:textSize="32sp"
+                app:layout_constraintBottom_toBottomOf="@+id/numpadSeven"
+                app:layout_constraintEnd_toStartOf="@+id/numpadNine"
+                app:layout_constraintStart_toEndOf="@+id/numpadSeven" />
+
+            <Button
+                android:id="@+id/numpadNine"
+                android:layout_width="124dp"
+                android:layout_height="84dp"
+                android:text="@string/numpadNine"
+                android:textSize="32sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/numpadSeven" />
+
+            <Button
+                android:id="@+id/numpadPoint"
+                android:layout_width="124dp"
+                android:layout_height="84dp"
+                android:text="@string/numpadPoint"
+                android:textSize="32sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/numpadSeven" />
+
+            <Button
+                android:id="@+id/numpadZero"
+                android:layout_width="124dp"
+                android:layout_height="84dp"
+                android:text="@string/numpadZero"
+                android:textSize="32sp"
+                app:layout_constraintBottom_toBottomOf="@+id/numpadPoint"
+                app:layout_constraintEnd_toStartOf="@+id/numpadConfirm"
+                app:layout_constraintStart_toEndOf="@+id/numpadPoint" />
+
+            <Button
+                android:id="@+id/numpadConfirm"
+                android:layout_width="124dp"
+                android:layout_height="84dp"
+                android:backgroundTint="@color/purple_13"
+                android:text="@string/numpadConfirm"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/numpadPoint" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/headerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Uusi maksu"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/radioButtonGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="91dp"
+            android:orientation='horizontal'
+            app:layout_constraintBottom_toTopOf="@+id/numpadLayout"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewBackSpace"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+
+            <RadioButton
+                android:id="@+id/radioButtonSend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/radio_button_selector"
+                android:button="@android:color/transparent"
+                android:checked="true"
+                android:drawableStart="@drawable/ic_baseline_send_24"
+                android:elevation="4dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="Lähetä rahaa"
+                android:textColor="@drawable/radio_button_color" />
+
+            <RadioButton
+                android:id="@+id/radioButtonReceive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radio_button_selector"
+                android:button="@android:color/transparent"
+                android:elevation="4dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="Pyydä rahaa"
+                android:textColor="@drawable/radio_button_color" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/imageViewBackSpace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:src="@drawable/backspace_selector"
+            android:text="@string/numpadBackSpace"
+            app:layout_constraintBottom_toTopOf="@+id/numpadLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/radioButtonGroup"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

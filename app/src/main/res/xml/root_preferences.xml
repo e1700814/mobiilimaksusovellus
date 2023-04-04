@@ -1,0 +1,54 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/info_header"
+        app:icon="@drawable/ic_baseline_info">
+
+        <EditTextPreference
+            app:title="Istunto"
+            app:enabled="false"
+            app:key="sessionId"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:title="Aikaleima"
+            app:enabled="false"
+            app:key="creationTime"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory app:title="@string/profile_header"
+        app:icon="@drawable/ic_baseline_person">
+
+        <EditTextPreference
+            app:title="Koko nimi"
+            app:enabled="false"
+            app:key="wholename"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:title="Puhelinnumero"
+            app:enabled="false"
+            app:key="phone"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:title="Kaupunki"
+            app:enabled="false"
+            app:key="city"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:title="Postinumero"
+            app:enabled="false"
+            app:key="postal"
+            app:useSimpleSummaryProvider="true" />
+
+        <Preference
+            app:key="logout_button"
+            app:layout="@layout/logout_button" />
+        <Preference
+            app:key="logout_progressbar"
+            app:enabled="false"
+            app:isPreferenceVisible="false"
+            app:title="Progressbar"
+            app:layout="@layout/logout_progressbar" />
+    </PreferenceCategory>
+</PreferenceScreen>

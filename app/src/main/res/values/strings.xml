@@ -1,0 +1,173 @@
+<resources>
+    <!-- PALVELIMEN OSOITTEEN NIMI. LAITA OSOITTEEKSI PALVELIMEN IP-OSOITE, TS. OMA IP-OSOITE.-->
+    <!-- MUKAAN LUKIEN PORTIN NUMERO, YLEENSÄ 8080. ESIM. OSOITE: https://192.0.0.0:8080 -->
+    <string name="BASE_URL">http://192.0.0.0:8080</string>
+
+    <!-- TODO: Tiedosto sisältää paljon käyttämättömiä asioita, mitä voisi poistella. -->
+    <!-- Sovelluksen nimi -->
+    <string name="app_name">Mobiilimaksusovellus</string>
+    <!--  -->
+    <string name="textView_create_user">Logo</string>
+    <!-- Syöttökentän kuvaus, johon syötetään etunimi -->
+    <string name="textView_first_name">Etunimi</string>
+    <!-- Syöttökentän kuvaus, johon syötetään sukunimi -->
+    <string name="textView_last_name">Sukunimi</string>
+    <!-- Syöttökentän kuvaus, johon syötetään sähköposti -->
+    <string name="textView_email">Sähköposti</string>
+    <!-- Syöttökentän kuvaus, johon syötetään puhelinnumero -->
+    <string name="textView_phone">Puhelinnumero</string>
+    <!-- Painikkeen kuvaus, jolla voidaan rekisteröidä käyttäjä -->
+    <string name="button_register">Rekisteröidy</string>
+    <!-- Navikointipalkin kuvaus tapahtumille, kuten maksut -->
+    <string name="nav_activities">Tapahtumat</string>
+    <!-- Navikointipalkin kuvaus etusivulle -->
+    <string name="nav_home">Etusivu</string>
+    <!-- Navikointipalkin kuvaus menulle -->
+    <string name="nav_menu">Lisää</string>
+    <!-- Navikointipalkin kuvaus menulle -->
+    <string name="activities_recent">Viimeaikaiset tapahtumat</string>
+    <!-- Etusivun painikkeen kuvaus rahan lähettämiselle -->
+    <string name="home_card_send">Lähetä rahaa</string>
+    <!-- Etusivun painikkeen kuvaus rahan vastaanottamiselle -->
+    <string name="home_card_receive">Pyydä rahaa</string>
+    <!-- Spinner vaihtoehdot -->
+    <string-array name="spinner_items">
+        <item>Juho</item>
+        <item>Eero</item>
+        <item>Jonatan</item>
+    </string-array>
+    <!-- Menun vaihtoehdot -->
+    <string-array name="menu_items">
+        <item>Profiili</item>
+        <item>Maksutavat</item>
+        <item>Ohje</item>
+        <item>Kirjaudu ulos</item>
+    </string-array>
+    <!-- Asetusten otsikot -->
+
+    <string name="messages_header">Messages</string>
+
+    <string name="sync_header">Sync</string>
+
+    <!-- Profiilin vaihtoehdot -->
+    <string name="profile_header">Profiili</string>
+    <string name="full_name_title">Nimi</string>
+    <string name="email_title">Sähköpostiosoite</string>
+    <string name="pin_title">Vaihda tunnusluku</string>
+
+    <!-- Ilmoitusten vaihtoehdot -->
+    <string name="notification_header">Ilmoitukset</string>
+    <string name="notification_title">Ota ilmoitukset käyttöön</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+    <string-array name="activities_full_txt">
+        <item>Jonatan Lågland</item>
+        <item>Sauli Niinistö</item>
+        <item>Sanna Marin</item>
+        <item>Sanna Marin</item>
+        <item>Sanna Marin</item>
+        <item>Sanna Marin</item>
+        <item>Sanna Marin</item>
+        <item>Sanna Marin</item>
+    </string-array>
+    <string-array name="activities_date_txt">
+        <item>Eilen 23:55</item>
+        <item>Maanantai 11:01</item>
+        <item>5.9.2022 19:37</item>
+        <item>5.9.2022 19:37</item>
+        <item>5.9.2022 19:37</item>
+        <item>5.9.2022 19:37</item>
+        <item>5.9.2022 19:37</item>
+        <item>5.9.2022 19:37</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="numpadButtonId">
+        <item>numpadOne</item>
+        <item>numpadTwo</item>
+        <item>numpadThree</item>
+        <item>numpadFour</item>
+        <item>numpadFive</item>
+        <item>numpadSix</item>
+        <item>numpadSeven</item>
+        <item>numpadEight</item>
+        <item>numpadNine</item>
+        <item>numpadPoint</item>
+        <item>numpadZero</item>
+        <item>numpadBackSpace</item>
+        <item>numpadConfirm</item>
+    </string-array>
+
+    <string name="numpadOne">1</string>
+    <string name="numpadTwo">2</string>
+    <string name="numpadThree">3</string>
+    <string name="numpadFour">4</string>
+    <string name="numpadFive">5</string>
+    <string name="numpadSix">6</string>
+    <string name="numpadSeven">7</string>
+    <string name="numpadEight">8</string>
+    <string name="numpadNine">9</string>
+    <string name="numpadPoint">.</string>
+    <string name="numpadZero">0</string>
+    <string name="numpadBackSpace">Askelpalautin</string>
+    <string name="numpadConfirm">Jatka</string>
+    <string name="localCurrency">€</string>
+    <string name="localDecimal">.</string>
+    <string name="maxAllowedWholeNumber">4</string>
+    <string name="maxAllowedFraction">2</string>
+    <string name="noValueFound">Syötä ensin summa</string>
+
+    <string name="progress_1">Vaihtoehdot</string>
+    <string name="progress_2">Valitse summa</string>
+    <string name="progress_3">Yhteystiedot</string>
+    <string name="progress_4">Vahvista</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">Welcome!</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">Login failed</string>
+    <string name="confirmRecipient">Vastaanottaja</string>
+    <string name="confirmSender">Lähettäjä</string>
+    <string name="invalid_credentials">Ole hyvä ja täytä kaikki kentät.</string>
+    <string name="payment_created">Uusi maksutapahtuma luotu.</string>
+    <string name="payment_creation_error">Virhe maksutapahtuman luonnissa. Yritä myöhemmin uudelleen.</string>
+    <string name="contacts_description">Etsi yhteystieto nimen perusteella.</string>
+    <string name="userNotFound">Käyttäjätiliä ei löytynyt nimellä.</string>
+    <string name="contactsTextViewHint">Hae yhteystieto</string>
+    <string name="contactsHeaderTextView">Valitse yhteystieto</string>
+    <string name="buttonTextNext">Seuraava</string>
+    <string name="hint_phone_number">Puhelinnumero</string>
+    <string name="hint_full_name">Koko nimi</string>
+    <string name="hint_password">Salasana</string>
+    <string name="hint_login_button">Kirjaudu sisään</string>
+    <string name="hint_register_button">Rekisteröidy</string>
+    <string name="hint_return_to_login">Palaa kirjautumiseen</string>
+    <string name="welcome_banner">Tervetuloa</string>
+    <string name="welcome_header">Luo käyttäjä tai kirjaudu sisään.</string>
+    <string name="hint_go_to_register">Luo uusi käyttäjä</string>
+    <string name="hint_address">Osoite</string>
+    <string name="hint_city">Kaupunki</string>
+    <string name="hint_postal_code">Postinumero</string>
+    <string name="hint_comment_field">Lisää kommentti...</string>
+    <string name="info_header">Info</string>
+    <string name="admin_header">Ylläpitäjä</string>
+    <string name="button_move_to_admin_page">Siirry ylläpidon asetuksiin</string>
+    <string name="admin_page_description">Tällä sivulla voit tarkastella käyttäjiä sekä tapahtumia.</string>
+    <string name="error_comment_required">Ole hyvä ja lisää kommentti.</string>
+    <string name="payment_updated">Maksutapahtuma päivitetty.</string>
+    <string name="payment_failed">Virhe, yritä myöhemmin uudelleen.</string>
+</resources>

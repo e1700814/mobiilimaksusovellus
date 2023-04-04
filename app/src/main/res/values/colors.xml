@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark_grey">#4c4c4c</color>
+    <color name="dark_grey_tint">#818181</color>
+    <color name="laurel_green">#A3B18A</color>
+    <color name="forest_green">#588157</color>
+    <color name="dark_red">#FF0000</color>
+    <color name="salmon">#FA8072</color>
+
+    <color name="light_gray">#E7ECEF</color>
+    <color name="navy_blue">#274C77</color>
+    <color name="navy_blue_shade">#23446b</color>
+    <color name="navy_blue_shade_2">#1f3d60</color>
+    <color name="navy_blue_shade_3">#172d47</color>
+    <color name="navy_blue_shade_4">#0f1e2f</color>
+    <color name="navy_blue_tint">#3c5d84</color>
+    <color name="heritage_blue">#6096BA</color>
+    <color name="sky_blue">#A3CEF1</color>
+    <color name="warm_blue">#a3bbf1</color>
+    <color name="ocean_blue">#187ff5</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="silver_shade">#acacac</color>
+    <color name="silver_shade_2">#868686</color>
+    <color name="silver_shade_3">#606060</color>
+    <color name="silver_purple">#cbc0d4</color>
+    <!--bg-->
+    <color name="purple_1">#4a4a7f</color>
+    <!--small card bg-->
+    <color name="purple_2">#7984e4</color>
+    <!--big card below small card bg-->
+    <color name="purple_3">#5c578f</color>
+    <!--grey ish-->
+    <color name="purple_4">#48568d</color>
+    <!--very grey -->
+    <color name="purple_5">#9e9dac</color>
+    <!--blue ish purple -->
+    <color name="purple_6">#545291</color>
+    <!--red purple -->
+    <color name="purple_7">#243474</color>
+    <!--dark blue -->
+    <color name="purple_8">#3b3b65 </color>
+    <color name="purple_9">#8382aa</color>
+    <color name="purple_10">#2c2c4c</color>
+    <color name="purple_11">#48568d</color>
+    <color name="purple_12">#745291</color>
+    <color name="purple_13">#527091</color>
+
+
+
+</resources>
